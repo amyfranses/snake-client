@@ -20,8 +20,8 @@ const connect = function () {
   });
   conn.on("connect", () => {
     conn.write("Name: AF");
-    // code that does something when the connection is first established
   });
+
   return conn;
 };
 module.exports = { connect };
