@@ -15,6 +15,10 @@ const handleUserInput = function (input) {
   } else if (input === "d") {
     console.log("Move: right");
     connection.write("Move: right");
+  } else if (input === "m") {
+    connection.write("Say: Hello!");
+  } else if (input === "n") {
+    connection.write("Say: GO, GO, GO");
   }
 };
 
