@@ -20,6 +20,7 @@ const connect = function () {
   });
   conn.on("connect", () => {
     conn.write("Name: AF");
+    
   });
 
   return conn;
