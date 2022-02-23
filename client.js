@@ -11,12 +11,12 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
-  conn.on("connect", (data) => {
-    console.log(data);
+  conn.on("data", (data) => {
+    console.log("Server says: ", data);
     // code that does something when the connection is first established
   });
   conn.on("connect", () => {
-    console.log("Successfully connected to game server");
+    console.log("You are successfully connected to game server");
     conn.write("Name: AF");
     // code that does something when the connection is first established
   });
